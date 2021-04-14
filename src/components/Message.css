@@ -1,0 +1,22 @@
+#message__guest {
+    text-align : left !important;
+}
+
+#message__user {
+    text-align: right !important;
+}
+
+.wrap{
+    max-width: inherit;
+}
+
+.wrap span{
+    white-space: pre-wrap;
+    
+}
+
+.wrap div{
+    height: auto;
+    max-width: 50%;
+    text-align: center;
+}
