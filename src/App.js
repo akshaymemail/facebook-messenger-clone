@@ -1,10 +1,6 @@
 import {
-  Button,
-  FormControl,
-  FormHelperText,
   IconButton,
-  Input,
-  InputLabel,
+  Input
 } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import "./App.css";
@@ -31,10 +27,12 @@ function App() {
     // create the input field after adding
     setInput("");
     // scroll messaege box top
-    document.getElementById("message-box").scrollTop = document.getElementById(
-      "message-box"
-    ).scrollHeight;
   };
+
+  window.setInterval(function() {
+    var elem = document.getElementById('message-box');
+    elem.scrollTop = elem.scrollHeight;
+  }, 1000);
 
   useEffect(() => {
     db.collection("messenger")
