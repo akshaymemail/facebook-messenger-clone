@@ -1,36 +1,49 @@
-.App{
+.App {
   margin: auto 10%;
-  text-align:center
+  text-align: center;
 }
-.stick-bottom{
-  position:absolute;
-    width:300px;
-    bottom:5%;
-    left:50%;
-    margin-left:-150px;
+.stick-bottom {
+  position: absolute;
+  bottom: 5%;
 }
 
-#message-box{
+.App__form {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.App__input {
+  flex: 1;
+}
+
+.App__send {
+  flex: 0;
+}
+
+#message-box {
   max-height: 50vh;
   overflow-y: auto;
 }
 
-@media (max-width : 512px){
-  .App{
-    max-width: 100%;
+@media (max-width: 512px) {
+  .App {
+    max-width: 95%;
     margin: auto;
-
+  }
+  .App__form{
+    width: 95%;
   }
 }
 
-::-webkit-scrollbar{
-  width: 3px
+::-webkit-scrollbar {
+  width: 3px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: aliceblue;
 }
 
-::-webkit-scrollbar-track{
-  background : initial
+::-webkit-scrollbar-track {
+  background: initial;
 }
