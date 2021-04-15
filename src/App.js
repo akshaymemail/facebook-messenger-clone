@@ -49,20 +49,22 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="mt-2 text-center">Facebook Messenger 🚀 !</h1>
+      <h1 className="mt-2 text-center">Facebook Messenger 
       <img
-        src="https://facebookbrand.com/wp-content/uploads/2020/10/Logo_Messenger_NewBlurple-399x399-1.png?w=128&h=128"
+        src="https://facebookbrand.com/wp-content/uploads/2020/10/Logo_Messenger_NewBlurple-399x399-1.png?w=30&h=30"
         alt="messenger"
       />
+      </h1>
+      
 
-      <div id="message-box" className="mt-5">
+      <div id="message-box" className="mt-2">
         {messages.map((message, index) => (
           <Message key={index} username={username} message={message} />
         ))}
       </div>
       <form
         onSubmit={handleSubmit}
-        className="text-center stick-bottom mt-2 App__form"
+        className="text-center stick-bottom App__form"
       >
         <Input
           className="App__input"
