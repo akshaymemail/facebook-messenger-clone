@@ -73,6 +73,7 @@ function App() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Type you message..."
+          autoComplete='off'
         />
         <IconButton type="submit" className="App__send" color="primary">
           <SendIcon />
