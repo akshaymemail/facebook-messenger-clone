@@ -32,7 +32,7 @@ function App() {
   window.setInterval(function() {
     var elem = document.getElementById('message-box');
     elem.scrollTop = elem.scrollHeight;
-  }, 1000);
+  }, 5000);
 
   useEffect(() => {
     db.collection("messenger")
