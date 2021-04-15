@@ -1,5 +1,6 @@
 .App{
   margin: auto 10%;
+  text-align:center
 }
 .stick-bottom{
   position:absolute;

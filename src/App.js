@@ -40,6 +40,7 @@ function App() {
   return (
     <div className="App">
       <h1 className='mt-5 text-center' >Facebook Messenger 🚀 !</h1>
+      <img src="https://facebookbrand.com/wp-content/uploads/2020/10/Logo_Messenger_NewBlurple-399x399-1.png?w=180&h=399" alt='messenger' />
 
       <div id='message-box' className='mt-5' >
         {
